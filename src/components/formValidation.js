@@ -18,9 +18,9 @@ const validateForm = (selectedTab) => (values) => {
             errors.phone = 'Phone Number is Required.'
         } else if (!values.phone.trim().match(/^08\d{8,14}$/)) {
             if (values.phone.trim().startsWith('08')) {
-                errors.phone = 'Invalid. Must more than 8 digits';
+                errors.phone = 'Invalid. Fill between 8-14 digits';
             } else {
-                errors.phone = 'Invalid. Must start with prefix 08.';
+                errors.phone = 'Invalid. Fill with prefix 08.';
             }
         }
 
