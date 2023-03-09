@@ -230,6 +230,16 @@ input[type=radio]:checked~.icon + .icon-wrap {
     position: relative;
 }
 
+.form-input-error {
+    position: relative;
+}
+
+.form-input-error svg {
+    position: absolute;
+    right: 23px;
+    top: 18.5px;
+}
+
 svg {
     position: absolute;
     right: 23px;
@@ -237,6 +247,10 @@ svg {
 }
 
 .email {
+    top: 24.5px;
+}
+
+.form-input-error .email {
     top: 24.5px;
 }
 
