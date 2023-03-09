@@ -1,0 +1,89 @@
+.form-budget {
+    display: flex;
+    /* position: relative; */
+    flex-direction: row;
+    align-items: center;
+    width: 282px;
+    height: 113px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+    border: 1px solid #EFF0F7;
+    border-radius: 16px;
+}
+
+input[type=radio]:hover ~ .form-budget {
+    cursor: pointer;
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 280px;
+    height: 111px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+    border: 2px solid #4A3AFF;
+    border-radius: 16px;
+}
+
+input[type=radio]:checked ~ .form-budget {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 280px;
+    height: 111px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+    border: 2px solid #4A3AFF;
+    border-radius: 16px;
+}
+
+
+/* Create a custom radio button */
+.checkmark {
+    position: relative;
+    display: flex;
+    height: 23.5px;
+    width: 23.5px;
+    border: 1.2px solid #D9DBE9;
+    box-shadow: inset 0px -3px 7px rgba(20, 20, 43, 0.08);
+    margin-left: 32.91px;
+    margin-right: 12.76px;
+    border-radius: 50%;
+}
+
+.checkmark-dot {
+    visibility: hidden;
+    position: absolute;
+    display: grid;
+    top: 7.25px;
+    left: 7.25px;
+    width: 9.7px;
+    height: 9.7px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/* On mouse-over; add a grey background color */
+input[type=radio]:hover ~ .form-budget > .checkmark{
+    background-color: #D9DBE9;
+}
+
+/* When the radio button is checked; add a blue background */
+input[type=radio]:checked ~ .form-budget > .checkmark {
+    position: relative;
+    margin-left: 32.91px;
+    margin-right: 12.76px;
+    background-color: #4A3AFF;
+}
+
+/* Show the indicator (dot/circle) when checked */
+input[type=radio]:checked ~ .form-budget > .checkmark-dot {
+    visibility: visible;
+    position: absolute;
+    width: 9.7px;
+    height: 9.7px;
+    top: 51px;
+    left: 40.71px;
+}

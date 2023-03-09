@@ -1,0 +1,156 @@
+.card-container {
+    margin: 64px 50px 0px 50px;
+    display: grid;
+    /* width: 100%; */
+    /* grid-template-columns: repeat(2, minmax(0, 1fr)); */
+}
+
+.header-form {
+    margin-bottom: 39px;
+    display: grid;
+    gap: 7.5px;
+}
+
+.title-form {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+    color: #170F49;
+}
+
+.subtitle-form {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #6F6C90;
+}
+
+.form-container-box {
+    display: grid;
+    /* position: relative; */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    row-gap: 17.5px;
+}
+
+.form-services {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 282px;
+    height: 113px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+    border: 1px solid #EFF0F7;
+    border-radius: 16px;
+}
+
+input[type=radio]:hover~.form-services {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 280px;
+    height: 111px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+    border: 2px solid #4A3AFF;
+    border-radius: 16px;
+}
+
+input[type=radio]:checked~.form-services {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 280px;
+    height: 111px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+    border: 2px solid #4A3AFF;
+    border-radius: 16px;
+}
+
+.icon-wrap {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    margin-left: 24px;
+}
+
+.icon {
+    width: 66.64px;
+    height: 66.64px;
+    border-radius: 9999px;
+    background: #4A3AFF;
+    opacity: 0.15;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.dev-icon svg {
+    position: absolute;
+    display: grid;
+    left: 14.4px;
+    top: 16.82px;
+}
+
+.design-icon svg {
+    position: absolute;
+    display: grid;
+    left: 14.4px;
+    top: 16.82px;
+}
+
+.marketing-icon svg {
+    position: absolute;
+    display: grid;
+    left: 16.5px;
+    top: 19px;
+}
+
+.other-icon svg {
+    position: absolute;
+    display: grid;
+    left: 13.68px;
+    top: 12.82px;
+}
+
+.dev-icon:hover svg able {
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.options-label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #170F49;
+    line-height: 20px;
+    margin: 0;
+}
+
+/* HIDE RADIO */
+[type=radio] {
+    cursor: pointer;
+    /* position: absolute; */
+    /* opacity: 0; */
+    width: 284px;
+    height: 115px;
+}
+
+/* CHECKED STYLES */
+[type=radio]:checked+img {
+    outline: 2px solid #f00;
+}

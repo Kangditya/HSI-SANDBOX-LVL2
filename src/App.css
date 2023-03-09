@@ -1,0 +1,163 @@
+* {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.App {
+  /* text-align: center; */
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.title-form {
+  font-size: 34px;
+  font-weight: 700;
+  color: #170F49;
+}
+
+.subtitle-form {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #6F6C90;
+
+}
+
+.App-link {
+  color: #61dafb;
+}
+.card {
+  width: 700px;
+  height: 610px;
+  border: 1px solid #EFF0F6;
+  border-radius: 35px;
+  box-shadow: 0px 5px 16px rgba(8, 15, 52, 0.06);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: center;
+}
+
+.button-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  margin-top: 32px;
+}
+
+.button-nav-first {
+  display: flex;
+  justify-content: flex-end;
+  width: 700px;
+  margin-top: 32px;
+}
+
+.nav-wrap {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 34px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #D9DBE9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav {
+  margin-left: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.step {
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  background-color: #EFF0F6;
+  text-align: center;
+}
+
+.recent-step {
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  background-color: #4A3AFF;
+  text-align: center;
+}
+
+.index-page-recent {
+  margin-top: 6px;
+  color: white;
+}
+
+.index-page {
+  margin-top: 6px;
+  color: #6F6C90;
+}
+
+.step-line {
+  width: 98px;
+}
+
+.left {
+  margin-right: 18px;
+  width: 49px;
+  height: 6px;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  background-color: #EFF0F6;
+}
+
+.left-pass {
+  margin-right: 18px;
+  width: 49px;
+  height: 6px;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  background-color: #4A3AFF;
+}
+
+.right {
+  position: relative;
+  margin-left: 18px;
+  width: 98px;
+  height: 6px;
+  border-radius: 9999px;
+  background-color: #EFF0F6;
+}
+
+.pass {
+  position: relative;
+  margin-left: 18px;
+  width: 98px;
+  height: 6px;
+  border-radius: 9999px;
+  background-color: #4A3AFF;
+}
+
+.right-recent {
+  position: absolute;
+  width: 49px;
+  height: 6px;
+  border-radius: 9999px;
+  background-color: #4A3AFF;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
